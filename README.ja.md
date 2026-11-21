@@ -11,7 +11,7 @@ English version: [README.md](README.md).
 
 同じ変更を SDK に当てたものは、フォーク [mayaakarin/muse-gadget-sdk](https://github.com/mayaakarin/muse-gadget-sdk) にもあります（上流の上に1コミット）。
 
-![実機確認した構成。ブレッドボード上の ESP32-1732S019 と4つのボタン（赤・黄・青・白）。画面は Disp機アクション実例のボタン用画像。下は2台目の確認機 ESP32-S3-DevKitC-1](20261122_023248_008.jpg)
+<img src="20261122_023248_008.jpg" alt="実機確認した構成。ブレッドボード上の ESP32-1732S019 と4つのボタン（赤・黄・青・白）。画面は Disp機アクション実例のボタン用画像。下は2台目の確認機 ESP32-S3-DevKitC-1" width="480">
 
 ## 何をするものか
 
