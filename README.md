@@ -18,6 +18,8 @@ The same change, applied to the SDK tree, also lives in the fork
 
 Japanese version of this document: [README.ja.md](README.ja.md).
 
+![The verified setup: an ESP32-1732S019 on a breadboard with four buttons (red, yellow, blue, white), the screen showing the legend image from the Disp action example; below it, the second verified board, an ESP32-S3-DevKitC-1](20261122_023248_008.jpg)
+
 ## What it does
 
 A physical button wired to the gadget becomes a way to knock on the agent's
