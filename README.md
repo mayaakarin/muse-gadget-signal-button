@@ -95,9 +95,10 @@ an agreement, set up by the owner with their agent, covering at least:
   weather, ... — the codes carry no meaning by themselves).
 
 Without that setup, presses still arrive in the chat; they just have no
-agreed action yet. A setup memo (in Japanese) is in
-[SETUP.ja.md](SETUP.ja.md), and the rules file to hand to your own Muse
-is [muse_setup.md](muse_setup.md).
+agreed action yet. A setup memo is in [SETUP.md](SETUP.md) (Japanese:
+[SETUP.ja.md](SETUP.ja.md)), and the rules file to hand to your own Muse
+is [muse_setup.md](muse_setup.md) (Japanese:
+[muse_setup.ja.md](muse_setup.ja.md)).
 
 ## Known limits
 

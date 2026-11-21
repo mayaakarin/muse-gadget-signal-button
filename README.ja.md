@@ -62,7 +62,7 @@ English version: [README.md](README.md).
 
 この仕込みが無くても押下はチャットに届きます。ただ、取り決めたアクションがまだ無いだけです。
 
-使い方は [SETUP.ja.md](SETUP.ja.md) に、自分の Muse にそのまま読ませるルールは [muse_setup.md](muse_setup.md) にあります。
+使い方は [SETUP.ja.md](SETUP.ja.md) に、自分の Muse にそのまま読ませるルールは [muse_setup.ja.md](muse_setup.ja.md) にあります。
 
 ## 既知の限界
 

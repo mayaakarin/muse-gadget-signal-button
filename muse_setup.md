@@ -1,16 +1,21 @@
-# ガジェットお約束ルール
+# Gadget agreement rules
 
-これは、自分の Muse に読ませるためのファイルです。
-ボタン割り当てとアクションを自分の内容に書き換えてから、自分の Muse に渡してください。
+Japanese version: [muse_setup.ja.md](muse_setup.ja.md).
 
-これは、私のガジェットのお約束ルールです。覚えておいてください。
+This is a file to hand to your own Muse.
+Rewrite the button assignments and actions to your own, then give it to
+your Muse.
 
-## 前提
+These are the agreement rules for my gadget. Please remember them.
 
-- 対象は `device.signal` がある機器です。
-- 複数のガジェットがあるときは、割り当ては機器ごとに持ちます。`CFGREQ` や `[SIG]` が来たら、どの機器から来たかを確認して、その機器の割り当てで対応してください。
+## Premises
 
-## ボタン割り当て
+- This applies to devices that have `device.signal`.
+- If there are several gadgets, keep an assignment per device. When a
+  `CFGREQ` or a `[SIG]` arrives, check which device it came from and use
+  that device's assignment.
+
+## Button assignment
 
 ```
 BTN1=GPIO18
@@ -18,32 +23,37 @@ BTN2=GPIO23
 BTN3=GPIO24
 ```
 
-## CFGREQ への返事
+## Replying to CFGREQ
 
-ガジェットの起動時に、チャットで `[SIG] code=CFGREQ seq=N nonce=XXXXXXXX` が来たら、この割り当てを `01:18,02:23,03:24` のような CSV 1行に直して、nonce を写した `[CFG]` メッセージ1つで返してください。余分な文は付けないでください。
+When `[SIG] code=CFGREQ seq=N nonce=XXXXXXXX` arrives in the chat as the
+gadget boots, turn this assignment into one CSV line like
+`01:18,02:23,03:24` and reply with a single `[CFG]` message that copies the
+nonce. Do not add any extra text.
 
-## ボタンが押されたら
+## When a button is pressed
 
-`[SIG] code=BTN1 press=short seq=N` のようなメッセージが来たら、対応するアクションを実行してください。必要なら、BTN ごとにアクションを決めておきます。
+When a message like `[SIG] code=BTN1 press=short seq=N` arrives, perform
+the corresponding action. If needed, decide an action for each BTN.
 
-- BTN1 が押されたら XXX を実行してください
-- BTN2 が押されたら 今日の天気を画像で送ってください
-- BTN3 が押されたら 確認の画像を返してください
+- When BTN1 is pressed, do XXX
+- When BTN2 is pressed, send today's weather as an image
+- When BTN3 is pressed, return a confirmation image
 
-## アクションの実例（Disp機）
+## Action example (Disp machine)
 
-表示のあるガジェットでは、こんな形もできます（実例です）。
+With a gadget that has a display, this shape works too (a real example).
 
-ボタン用画像は、画面を縦長に4分割した帯で、各ボタンの色と名前を示します。
+The button image is a legend: the screen split into four vertical bands,
+each showing a button's colour and name.
 
-- BTN1: 赤、テキストで「コマンド1」
-- BTN2: 黄色、テキストで「コマンド2」
-- BTN3: 青、テキストで「コマンド3」
-- BTN4: 白、テキストで「天気予報」
+- BTN1: red, with the text "Command 1"
+- BTN2: yellow, with the text "Command 2"
+- BTN3: blue, with the text "Command 3"
+- BTN4: white, with the text "Weather forecast"
 
-押されたら、それに合わせて実行画面を表示します。
+When a button is pressed, show the matching execution screen.
 
-- BTN1〜BTN3: 対応する「コマンドN」の実行画面
-- BTN4（白）のみ: 天気予報の画像
+- BTN1–BTN3: the execution screen for "Command N"
+- BTN4 (white) only: the weather forecast image
 
-どれも、5秒後に元のボタン用画像に戻します。
+In all cases, return to the original button image after 5 seconds.
