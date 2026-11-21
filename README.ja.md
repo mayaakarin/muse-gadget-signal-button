@@ -6,6 +6,9 @@ ESP32 の Muse Gadget に物理ボタンをつなぎ、押すと Muse のチャ�
 
 ![実機で動作を確認した構成。上はブレッドボード上の ESP32-1732S019 と赤・黄・青・白の4ボタン。下は ESP32-S3-DevKitC-1](https://github.com/mayaakarin/muse-gadget-signal-button/raw/main/20261122_023248_008.jpg)
 
+
+<img src="20261122_023248_008.jpg" alt="シグナルボタンの実機確認構成" width="480">
+
 ## ボタンを押すとどうなるか
 
 ボタンを短押しすると、ガジェットから Link 経由で Muse のチャットに、次のようなメッセージが1件届きます。
