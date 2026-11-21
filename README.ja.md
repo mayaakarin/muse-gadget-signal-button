@@ -9,7 +9,7 @@ English version: [README.md](README.md).
 - `signal_button.patch` — 変更の全部です。SDK の `esp32/main/` 以下の6ファイル分で、SDK のチェックアウトで `git apply` して使います。
 - `muse_signal.c`、`muse_signal.h` — 新規追加ファイル2つ。パッチを開かなくても読めるよう、別に置いてあります（パッチにはこの他に `app.c`、`noise_control.cpp`、`Kconfig.projbuild`、`CMakeLists.txt` の編集が含まれます）。
 
-同じ変更を SDK の木に当てたものは、フォーク [mayaakarin/muse-gadget-sdk](https://github.com/mayaakarin/muse-gadget-sdk) にもあります（上流の上に1コミット）。
+同じ変更を SDK に当てたものは、フォーク [mayaakarin/muse-gadget-sdk](https://github.com/mayaakarin/muse-gadget-sdk) にもあります（上流の上に1コミット）。
 
 ## 何をするものか
 
