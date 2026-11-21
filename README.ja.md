@@ -5,7 +5,7 @@ English version: [README.md](README.md).
 ESP32 の Muse Gadget に物理ボタンをつなぎ、押すと Muse のチャットに BTN1 などのシグナルを送れるようにするパッチです。自分の Muse に「BTN1 が届いたら天気カードを画面に出して」と指示しておけば、ボタンひとつで呼び出せます。ボタンを増やしたり、使う GPIO を変えたりするときは、Muse が返す設定を変更してガジェットを再起動するだけです。ファームウェアの書き直しは不要です。
 
 
-<img src="https://github.com/mayaakarin/muse-gadget-signal-button/raw/main/20261122_023248_008.jpg" alt="シグナルボタンの実機確認構成" width="640">
+<img src="https://github.com/mayaakarin/muse-gadget-signal-button/raw/main/20261122_023248_008.jpg" alt="シグナルボタンの実機確認構成" width="480">
 
 
 ## ボタンを押すとどうなるか
