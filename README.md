@@ -16,6 +16,8 @@ The same change, applied to the SDK tree, also lives in the fork
 [mayaakarin/muse-gadget-sdk](https://github.com/mayaakarin/muse-gadget-sdk)
 (one commit on top of upstream).
 
+Japanese version of this document: [README.ja.md](README.ja.md).
+
 ## What it does
 
 A physical button wired to the gadget becomes a way to knock on the agent's
